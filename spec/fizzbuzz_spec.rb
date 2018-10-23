@@ -11,3 +11,10 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(5)).to eq 'buzz'
   end
 end
+
+describe 'fizzbuzz' do
+  it 'returns "fizzbuzz" when passed a multiple of 15' do
+    expect(fizzbuzz(rand(100)*15)).to eq 'fizzbuzz'
+  end
+end
+
