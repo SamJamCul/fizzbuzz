@@ -5,7 +5,7 @@ def fizzbuzz(number)
     return "fizz"
   elsif number % 5 == 0
     return "buzz"
-  elsif number <= 2000000
+  else
     return number
   end
 end
