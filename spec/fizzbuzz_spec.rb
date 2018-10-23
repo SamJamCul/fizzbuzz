@@ -18,3 +18,12 @@ describe 'fizzbuzz' do
   end
 end
 
+describe 'fizzbuz' do
+  it 'returns "buzz" when passed a multiple of only 5' do
+    1.upto(100) do |n|
+      next if n % 3 == 0 || n % 5 != 0
+      expect(fizzbuzz(n)).to eq 'buzz'
+    end
+  end
+end
+
