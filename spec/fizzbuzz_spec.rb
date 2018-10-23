@@ -27,3 +27,12 @@ describe 'fizzbuz' do
   end
 end
 
+describe 'fizzbuzz' do
+  it 'returns n when passed n where n is not a multiple of 3 or 5' do
+    1.upto(2000000) do |n|
+      next if n % 3 == 0 || n % 5 == 0
+      expect(fizzbuzz(n)).to eq n
+    end
+  end
+end
+
